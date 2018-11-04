@@ -1,6 +1,6 @@
 output "id" {
   description = "The Amazon Resource Name (ARN) specifying the role"
-  value = "${aws_iam_role_policy.this.arn}}"
+  value = "${aws_iam_role_policy.this.id}}"
 }
 
 output "name" {
@@ -10,5 +10,5 @@ output "name" {
 
 output "role" {
   description = "The name of the role"
-  value = "${aws_iam_role_policy.this.name}"
+  value = "${aws_iam_role_policy.this.role}"
 }
