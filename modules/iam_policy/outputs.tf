@@ -1,14 +1,14 @@
 output "id" {
-  description = "The Amazon Resource Name (ARN) specifying the role"
-  value = "${aws_iam_role_policy.this.id}"
+  description = "The policy's ID"
+  value = "${aws_iam_policy.this.id}"
 }
 
 output "name" {
-  description = "The name of the role"
-  value = "${aws_iam_role_policy.this.name}"
+  description = "The name of the policy"
+  value = "${aws_iam_policy.this.name}"
 }
 
-output "role" {
-  description = "The name of the role"
-  value = "${aws_iam_role_policy.this.role}"
+output "arn" {
+  description = "The ARN assigned by AWS to this policy"
+  value = "${aws_iam_policy.this.arn}"
 }

@@ -1,5 +1,6 @@
-variable "role" {
-  description = "The name of the role policy"
+variable "name" {
+  description = "The name of the policy"
+  default = ""
 }
 
 variable "policy" {
